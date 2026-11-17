@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000c1d"><meta name="description" content="Feed Morty some words. Pull his face. Generate a completely unhinged screaming AI rap.">
+  <title>Morty Rapper — oh geez, he's got a mic</title>
+  <!-- INLINE_STYLES -->
+</head>
+<body>
+  <canvas id="space" aria-hidden="true"></canvas>
+  <header><a href="./" class="brand">[morty rapper]</a><span class="transmission">UNAUTHORIZED TRANSMISSION // C-137 · V3.1</span><div class="utility"><button id="fx" type="button" aria-pressed="false">FX: OFF</button><button id="motion" type="button" aria-pressed="false">CALM VISUALS</button></div></header>
+  <main class="playground" id="playground">
+    <div class="dimension" aria-hidden="true">DIMENSION<br><b>???</b></div>
+    <div class="title-block"><p>OH GEEZ. HE’S GOT A MIC.</p><h1 aria-label="Morty Rapper"><span class="title-line" aria-hidden="true"><i>M</i><i>O</i><i>R</i><i>T</i><i>Y</i></span><span class="title-line second" aria-hidden="true"><i>R</i><i>A</i><i>P</i><i>P</i><i>E</i><i>R</i><em>™</em></span></h1><span class="tiny-subtitle">A TERRIBLE IDEA. AN ACTUAL RAP GENERATOR.</span></div>
+    <div class="portal" aria-hidden="true"><div></div><div></div><div></div></div>
+    <div class="face-zone" id="face-zone"><canvas id="face" role="button" tabindex="0" aria-label="Stretch Morty's rubber face. Drag with your pointer, or press Space to squish."></canvas><p id="face-loading">ASSEMBLING HIS LAST BRAIN CELL…</p><div class="pull-caption" id="pull-caption">← PULL HIS FACE. HE’S FINE. PROBABLY.</div></div>
+    <div class="rubber-eye eye-one" aria-hidden="true"><span></span></div><div class="rubber-eye eye-two" aria-hidden="true"><span></span></div>
+    <button class="floating-thing oh-geez" id="panic" type="button" aria-label="Squish Morty's face">oh<br>geez!</button>
+    <button class="floating-thing panic-sticker" id="panic-sticker" type="button" aria-label="Launch a visual freakout">100%<br><strong>UNSTABLE</strong><small>click to make it worse</small></button>
+    <div class="speech" id="speech" aria-hidden="true">I DIDN’T<br>AGREE TO THIS</div>
+    <div class="scribble" aria-hidden="true">✳</div><div class="scribble scribble-two" aria-hidden="true">✶</div>
+    <form id="rap-form" class="word-machine" onsubmit="event.preventDefault()">
+      <div class="input-title"><label for="words">FEED HIM WORDS.</label><button id="surprise" type="button">RANDOM GARBAGE ↗</button></div>
+      <div class="input-shell"><textarea id="words" name="words" rows="3" maxlength="320" placeholder="spaghetti, taxes, portal, banana" aria-describedby="input-hint word-count" required></textarea><div class="input-bottom"><div class="chips" id="word-chips" aria-label="Your words"></div><span id="word-count">0/12</span></div></div>
+      <p id="input-hint">2–12 words. Commas or spaces. Terrible combinations encouraged.</p>
+      <fieldset class="beat-picker"><legend>CHOOSE YOUR DAMAGE</legend><label><input type="radio" name="style" value="trap" checked><span>PORTAL TRAP</span></label><label><input type="radio" name="style" value="glitch"><span>GLITCH RAGE</span></label><label><input type="radio" name="style" value="boom-bap"><span>PANIC BAP</span></label></fieldset>
+      <label class="chaos-label" for="chaos">MENTAL STABILITY <output id="chaos-value" for="chaos">NONE</output></label><input id="chaos" name="chaos" type="range" min="70" max="100" value="100" aria-label="Chaos intensity, from unhinged to completely feral">
+      <button class="generate stretchy" id="generate" type="submit"><span id="generate-label">MAKE HIM RAP</span><span class="button-eye" aria-hidden="true">◉</span></button>
+      <div class="under-button"><span>30 SECONDS OF QUESTIONABLE DECISIONS</span><button id="cancel" type="button" hidden>STOP WAITING</button></div>
+      <p id="status" role="status" aria-live="polite">He has no idea what’s about to happen.</p>
+      <div id="draft-actions" hidden><button id="retry-voice" type="button">↻ RETRY MORTY VOICE</button><button id="save-draft" type="button">↓ SAVE UNCONVERTED DRAFT</button></div>
+      <details id="voice-error-details" hidden><summary>VOICE SERVICE DETAILS</summary><pre id="voice-error"></pre></details>
+    </form>
+    <section class="the-damage" aria-label="Your rap"><div class="output-header"><span id="on-air">● NO DAMAGE YET</span><span>REC / C-137</span></div><div id="empty-player"><p>YOUR WORDS.<br>HIS PROBLEM.</p><button id="sample" type="button">▶ HEAR THE EXPERIMENT</button></div><div id="audio-area" hidden><h2 id="track-title">THE DAMAGE</h2><p id="voice-status"></p><audio id="audio" controls preload="none" aria-label="Generated rap"></audio><div class="track-actions"><span id="track-number">TAKE 001</span><button id="download" type="button">↓ SAVE THE EVIDENCE</button></div></div><details id="lyrics-details" hidden><summary>WHAT IS HE EVEN SAYING? <span>+</span></summary><div id="lyrics"></div><p id="coverage"></p></details></section>
+    <div class="floor-note" aria-hidden="true">DO NOT FEED AFTER MIDNIGHT. ACTUALLY, WHATEVER.</div>
+  </main>
+  <footer><span>UNOFFICIAL FAN EXPERIMENT / AI AUDIO</span><span>INSPIRED BY <a href="https://www.adultswim.com/etcetera/elastic-man" target="_blank" rel="noopener noreferrer">ELASTIC MAN</a> BY DAVID LI</span><span id="voice-note">WORDS MAY GET LOST IN THE SCREAMING.</span></footer>
+  <!-- INLINE_APP -->
+</body>
+</html>
