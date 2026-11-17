@@ -1,0 +1,32 @@
+{
+  "words": [
+    "banana",
+    "taxes",
+    "portal",
+    "spaghetti"
+  ],
+  "style": "trap",
+  "voice": "morty",
+  "lines": [
+    {
+      "start": 0,
+      "end": 6.5,
+      "text": "Um... uh... is this thing on? Oh geez."
+    },
+    {
+      "start": 7.5,
+      "end": 14,
+      "text": "I got, um, banana... no wait... uh, taxes."
+    },
+    {
+      "start": 15.5,
+      "end": 21,
+      "text": "Um um, portal! Uh... spaghetti! I forgot the rhyme."
+    },
+    {
+      "start": 22.5,
+      "end": 29.9,
+      "text": "Um, uh... that was... AAAAAH! I cannot rap!"
+    }
+  ]
+}
