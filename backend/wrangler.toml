@@ -1,0 +1,10 @@
+name = "morty-rapper-api"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Replace with your actual GitHub Pages origin, without a path or trailing slash.
+ALLOWED_ORIGIN = "https://raoulsilver.github.io"
+
+# Set REPLICATE_API_TOKEN using `npx wrangler secret put REPLICATE_API_TOKEN`.
+# Never put it in this file or commit it to GitHub.
